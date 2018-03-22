@@ -1,0 +1,14 @@
+p{
+    color: #9854ff;
+}
+form{
+    border: 1px solid gray;
+    width: 300px;
+    padding: 10px;
+}
+button, #button{
+    padding: 5px;
+    background-color: #66bbff;
+    color: white;
+    border-radius: 5px;
+}

@@ -1,0 +1,11 @@
+<a [routerLink]="['/homepage']">Home</a>
+<p>Edit this author</p>
+<form (submit)="submitEdits()" method="post">
+  <label>Name:</label><br>
+  <input type="text" name="user.name" [(ngModel)]="user.name" value="{{user.name}}" />
+  <br><br>
+  <button [routerLink]="['homepage']">Cancel</button>  
+  <input type="submit" value="Submit" id="button" />
+</form>
+
+<p *ngIf="errors">{{errors.errors.name.message}}</p>
